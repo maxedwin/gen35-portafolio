@@ -19,9 +19,11 @@ function sendEmail(e) {
     message: document.getElementById('message').value
   }
 
-  if (params.name && params.email && params.subject && params.message) {
-    emailjs.send('service_tk7ibzn', 'template_z85cct9', params).then(openModal())
+ if (params.name && params.email && params.subject && params.message) {
+    emailjs.send('default_service','template_x8pzlox', params).then(openModal())
   }
+  
+
 
 }
 
